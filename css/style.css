@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+}
+
+button {
+  font-family: inherit;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+}
+
+h1,
+strong {
+  color: hsl(223deg, 47%, 23%);
+}
+
+p {
+  color: hsl(224deg, 23%, 55%);
+}
+
+.body--container {
+  width: inherit;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../images/pattern-background-desktop.svg);
+  background-color: hsl(225deg, 100%, 94%);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 500px) {
+  .body--container {
+    background-image: url(../images/pattern-background-mobile.svg);
+  }
+}
+
+.card {
+  max-width: 375px;
+  background-color: white;
+  border-radius: 0.8rem;
+  overflow: hidden;
+}
+@media screen and (max-width: 500px) {
+  .card {
+    max-width: 350px;
+  }
+}
+.card .card--image {
+  width: 100%;
+}
+.card .card--image img {
+  width: 100%;
+}
+
+.card--content {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card--text {
+  max-width: 80%;
+}
+.card--text .card--heading {
+  margin-block: 1rem;
+}
+.card--text .card--heading h1 {
+  font-size: 25px;
+}
+.card--text .card--para {
+  margin-bottom: 2rem;
+}
+
+.plan {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(225deg, 100%, 98%);
+  border-radius: 0.5rem;
+  padding: 1em 0.8em;
+}
+.plan .active-plan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.plan .active-plan .plan--img {
+  margin-right: 1rem;
+  display: grid;
+  place-items: center;
+}
+.plan .active-plan .plan--img img {
+  width: 90%;
+}
+.plan .change {
+  font-weight: 500;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: 0.3s;
+  color: hsl(245deg, 75%, 52%);
+}
+.plan .change:hover {
+  color: hsl(224deg, 23%, 55%);
+  text-decoration: none;
+}
+
+.payment {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.payment .payment--btn {
+  width: 80%;
+}
+.payment .payment--btn button {
+  width: 100%;
+  background-color: hsl(245deg, 75%, 52%);
+  padding: 1em 0;
+  color: white;
+  border-radius: 0.5rem;
+  margin-block: 1.5rem;
+  transition: 0.1s;
+  box-shadow: 0px 20px 20px rgba(79, 20, 196, 0.297);
+}
+.payment .payment--btn button:hover {
+  scale: 0.9;
+}
+.payment .payment--cancle-btn {
+  margin-bottom: 2rem;
+}
+.payment .payment--cancle-btn button {
+  background: none;
+  color: hsl(224deg, 23%, 55%);
+  transition: 0.2s;
+}
+.payment .payment--cancle-btn button:hover {
+  scale: 1.1;
+}/*# sourceMappingURL=style.css.map */
